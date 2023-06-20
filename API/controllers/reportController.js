@@ -1,7 +1,7 @@
 const Report = require('./../models/Report');
 
 exports.createReport = () => {
-    var newReport = new Report();
+    //TODO: CREATE
 }
 
 exports.getReport = (date) => {
