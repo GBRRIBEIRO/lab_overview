@@ -8,11 +8,7 @@ const classroomSchema = new mongoose.Schema({
         unique: true
     },
     
-},
-    {
-        //Disables the version key in the DB document
-        versionKey: false 
-    });
+});
 
 
 //Create a model using the schema | Model is a collection in the database

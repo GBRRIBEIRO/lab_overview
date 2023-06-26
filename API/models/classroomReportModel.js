@@ -32,10 +32,11 @@ classroomReportSchema = new mongoose.Schema({
     nFunctionalKeyboardsQnt: Number,
     keyboardsObs: String,
     generalObs: String,
-},
-{
-    //Disables the version key in the DB document
-    versionKey: false 
+    createdAt: {
+        type: Date,
+        default: Date.now()
+        //select: false //Hides from the output
+      },
 });
 
 //Creates a model using the schema provided
